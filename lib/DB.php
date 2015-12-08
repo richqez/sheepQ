@@ -77,6 +77,13 @@ class DB
     }
 
 
+    /**
+     * [find_by description]
+     * @param  [type] $tableName   [description]
+     * @param  [type] $where       [description]
+     * @param  [type] $isFirstOnly [description]
+     * @return [type]              [description]
+     */
     public function find_by($tableName,$where,$isFirstOnly){
         $sql = "SELECT * FROM ". $tableName . " WHERE ";
         $index = 0 ;
@@ -87,8 +94,6 @@ class DB
             }
             $index++;
         }
-        //echo "$sql";
-
         $resultSet = $this->mysqli->query($sql);
         if (!$resultSet) {
             echo $this->mysqli->error;
@@ -204,10 +209,6 @@ class DB
         }
 
     }
-
-
-
-
 
 
 }
