@@ -12,7 +12,7 @@ class DB
         "db_url"=>"localhost",
         "db_username"=>"root",
         "db_password"=>"",
-        "db_name"=>"tawanchai",
+        "db_name"=>"dbname",
                 
 
 
@@ -65,6 +65,7 @@ class DB
     	$sql = " SELECT * FROM $tableName";
     	$array = array();
     	$resultSet = $this->mysqli->query($sql);
+        echo "$sql";
     	if ($resultSet) {
     		while ($row = $resultSet->fetch_assoc()) {
     			array_push($array,$row);

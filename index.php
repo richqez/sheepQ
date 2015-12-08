@@ -2,7 +2,10 @@
 	
 	require 'lib/DB.php';
 
-	$data = DB::getConn()->find_by('employee',array("emp_id"=>"E0001"),true);
+	$data = DB::getConn()->find('employee');
 
-	var_dump($data);
+	//var_dump($data);
+
+
+
  ?>
