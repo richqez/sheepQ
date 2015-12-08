@@ -1,5 +1,5 @@
 # sheepQ
-Esy PHP SQL Mysqli  Query Builder
+PHP Mysqli  Query Builder
 
 
 #Installing
