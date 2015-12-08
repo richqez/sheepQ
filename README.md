@@ -35,8 +35,10 @@ SELECT * FROM
 ```php
 DB::getConn()->find("tablename")
 ```
-
-
+SELECT * FROM WHERE
+```php
+$data = DB::getConn()->find_by('employee',array("emp_id"=>"E0001"),true);
+```
 INSERT INTO 
 ```php
   $tablName = "Users";
