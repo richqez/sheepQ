@@ -20,6 +20,7 @@ class DB
     );
 
 
+
     /**
      * summary
      *
@@ -43,7 +44,6 @@ class DB
            $this->mysqli->close();
        }
     }
-
 
 
 
@@ -210,9 +210,15 @@ class DB
 
     }
 
+    /**
+     * /
+     * @return [type] [description]
+     */
+    public function getMysqli(){
+        return $this->mysqli;
+    }
+
 
 }
-
-
 
  ?>
